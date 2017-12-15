@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FaLcon_Lunch</title>
+</head>
+<body>
+    <form action"">
+        <label for="isbn">好きな食べ物 : </label>
+        <select name="isbn" id="isbn">
+        <option value="streming.html"/>くっせぇの。</option>
+        <option value="choco.html"/>チョコレート</option>
+        <option value="nan.html"/>ナン</option>
+        <input type="button" value="決定">
+    </select>
+</form>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        document.getElementById('isbn').addEventListener('change', function() {
+            location.href = "https://5srn.github.io/" + this.value;
+        },false);
+    },false)
+</script>
+
+<p>世界で一番くっせぇの。</p>
+<img src="streming.jpg" style="zoom:0.5"/>
+</body>
+</html>
