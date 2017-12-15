@@ -1,0 +1,49 @@
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>Sample4</title>
+<script type="text/javascript">
+    function abc(){
+ 
+                var hoge = Sample4_from.drop.value;
+                if(hoge == "日曜日"){
+                Document.getElementById('week').textContent='日曜日に市場に行って';
+                }
+                if(hoge == "月曜日"){
+                Document.getElementById('week').textContent='月曜日にお風呂を焚いて';
+                }
+                if(hoge == "火曜日"){
+                Document.getElementById('week').textContent='火曜日にお風呂に入り';
+                }
+                if(hoge == "水曜日"){
+                Document.getElementById('week').textContent='水曜日に友達が来て';
+                }
+                if(hoge == "木曜日"){
+                Document.getElementById('week').textContent='木曜日に送っていった';
+                }
+                if(hoge == "金曜日"){
+                Document.getElementById('week').textContent='金曜日に糸巻きもせず';
+                }
+                if(hoge == "土曜日"){
+                Document.getElementById('week').textContent='土曜日はおしゃべりばかり';
+                }
+    }
+</script>
+</head>
+ 
+<body>
+    <form name="Sample4_form" action="a.html">
+        <select name="drop">
+            <option value="月曜日"/>月曜日</option>
+            <option value="火曜日"/>火曜日</option>
+            <option value="水曜日"/>水曜日</option>
+            <option value="木曜日"/>木曜日</option>
+            <option value="金曜日"/>金曜日</option>
+            <option value="土曜日"/>土曜日</option>
+            <option value="日曜日"/>日曜日</option>
+            <input type="button" value="決定" onclick="abc()">
+        </select>
+    </form>
+    <p id "week"></p>
+</body>
+</html>
