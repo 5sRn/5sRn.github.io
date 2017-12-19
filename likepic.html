@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>バナナ食べたい</title>
+    <script>
+    window.addEventListener("load", function(){
+
+    // 画像インデックス
+    var imageIndex = 0;
+
+    // リスナー登録
+    document.getElementsByTagName("button")[0].addEventListener("click", function(){
+        // 画像イメージをインクリメント
+        if (imageIndex < 3) {
+            imageIndex++;
+        } else {
+            imageIndex = 0;
+        }
+        // 画像srcを変更
+        switch(imageIndex) {
+            case 0:
+                imageSrc = "./images/abe.jpg";
+                break;
+            case 1:
+                imageSrc = "./images/hatoyama.jpg";
+                break;
+            case 2:
+                imageSrc = "./images/noda.jpg";
+                break;
+            case 3:
+                imageSrc = "./images/hamu.jpg";
+                break;
+        }
+        document.getElementById("image").src = imageSrc;
+
+    }, false);
+});
+    </script>
+</head>
+<body>
+<button>何が出るかな？？</button>
+<p><img id="image" src="hatoyama.jpg" alt="鳩山"/></p>
+</body>
+</html>
