@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>ゆーざーえーじぇんと</title>
+</head>
+<body>
+        <form action"">
+                <label for="isbn">好きな食べ物 : </label>
+                <select name="isbn" id="isbn">
+                <option value="streming.html"/>くっせぇの。</option>
+                <option value="choco.html"/>チョコレート</option>
+                <option value="nan.html"/>ナン</option>
+                <option value="how to use github.html"/>使い方</option>
+                <option value="ago.html"/>ブラウザ判定</option>
+                <input type="button" value="決定">
+            </select>
+        </form>
+<span id="userAgent"></span>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        var userAgent = window.navigator.userAgent.toLowerCase();
+        $('span#userAgent').text(userAgent);
+    });
+</script>
+<script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('isbn').addEventListener('change', function() {
+                location.href = "https://5srn.github.io/" + this.value;
+            },false);
+        },false)
+    </script>
+</body>
+</html>
