@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>自己紹介</title>
+    <style>
+    button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+    appearance: none;
+}
+ 
+#Audio-Control {
+    overflow: hidden;
+}
+ 
+#Audio-Control button {
+    border: 1px solid rgb(253, 0, 0);
+    width: 40px;
+    float: left;
+    padding: 5px 0;
+    -webkit-transition: all 0.6s ease;
+    -moz-transition: all 0.6s ease;
+    -o-transition: all 0.6s ease;
+    transition: all 0.6s ease;
+}
+ 
+#Audio-Control button.on {
+    border-left: none;
+}
+ 
+#Audio-Control button.off {
+    border-right: none;
+}
+ 
+#Audio-Control button.active {
+    background: rgb(255, 0, 0);
+}
+ 
+#Audio-Control button:not(.active):hover {
+    background: rgba(0, 0, 0, 0.3);
+}
+</style>
+    <script type="text/javascript" src="support.js"></script>
+</head>
+<body>
+<div id="Audio-Control">
+    <audio id="bgm" preload autoplay loop muted>
+
+        <source src="sample.mp3" type="audio/mpeg">
+    </audio>
+    <button onclick="enableMute()" class="off active" type="button">OFF</button>
+    <button onclick="disableMute()" class="on" type="button">ON</button>
+</div>
+    <body background="john.png">
+    <h1><center>吉田陵という人物について</center></h1>
+    <h2> 名前  :  吉田 陵 
+    <br>年齢:19 性別:男</h2>
+    <ol>
+    <li>趣味趣向</li>
+        <a href="https://www.epicgames.com/fortnite/ja/home">ゲーム(Fortnite)</a>
+        <a href="https://ja.wikipedia.org/wiki/電子たばこ">VAPE</a>
+    <li>好きなアーティスト</li>
+    <br><iframe width="600" height="300" src="https://www.youtube.com/embed/1mjlM_RnsVE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <br><iframe width="600" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/2517228&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+    </ol>
+    <h2>好きな映画</h2>
+    <p>スーパーナチュラル</p>
+    <img src="supernatural.jpg" alt="スーパーナチュラル" align="middle">
+    <br>
+    <a href="https://www.happyon.jp/supernatural">気になった人はコチラ!</a>
+    <p>今Huluでは2週間の無料トライアルを実施中！ぜひ見てね！</p>
+    <script>
+    var el = document.getElementById("bgm");
+ 
+ function enableMute() {
+     el.muted = true;
+ }
+  
+ function disableMute() {
+     el.muted = false;
+ }
+  
+ $(function() {
+     $('#Audio-Control button').click(function(){
+         $('#Audio-Control button').toggleClass('active');
+     });
+ });
+    </script>
+    
+</body>
+</html>
