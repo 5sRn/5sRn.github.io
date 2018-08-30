@@ -10,7 +10,7 @@ header{
   width: 100%;
   height: 66px;
   background: #fff;
-  border-top: 4px solid #0054a7;
+  border-top: 4px solid #0051a7;
 }
 
 .inner{
@@ -94,7 +94,7 @@ flex-wrap: wrap;
 
 .qanda p{
   font-weight: bold;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .qanda span{
