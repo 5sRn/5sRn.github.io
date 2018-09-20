@@ -4,19 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>ようこそ</title>
 </head>
+<link rel="stylesheet" href="TOP.css">
 <body>
-    <script src="path/to/particles.min.js"></script>
-    <div class="container">
-        <div class="box">
-          <h1>particles.js Demo</h1>
-          <p><a href="https://marcbruederlin.github.io/particles.js/">Website</a></p>
-        </div>
-      </div>
-      
-      
-      <canvas class="background"></canvas>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
+        <div class="container">
+                <div class="box">
+                <a href="start.html">
+                <img src="portfolio.png">
+                </a>
+                </div>
+              </div>
+              
+              
+              <canvas class="background"></canvas>
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
+<script>
+    var particles = Particles.init({
+    selector: '.background',
+  sizeVariations: 10,
+  color: ['#00bbdd', '#404B69', '#DBEDF3'],
+  connectParticles: true
+});
+
+</script>
 </body>
 </html>
