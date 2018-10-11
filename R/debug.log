@@ -1,0 +1,5 @@
+[1005/155003.851:ERROR:process_info.cc(329)] VirtualQueryEx: アクセスが拒否されました。 (0x5)
+[1005/155003.851:ERROR:process_info.cc(550)] ReadMemoryInfo failed
+[1005/155003.866:ERROR:process_reader_win.cc(151)] SuspendThread: アクセスが拒否されました。 (0x5)
+[1005/155003.866:ERROR:exception_snapshot_win.cc(88)] thread ID 6440 not found in process
+[1005/155003.866:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: 既存のプロセスにアクセスしようとしました。 (0xc000010a)

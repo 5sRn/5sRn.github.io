@@ -1,0 +1,219 @@
+﻿@charset "utf-8"; 
+
+
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, form, input, textarea, p, th, td, img {
+	margin: 0; 
+	padding: 0; 
+	border: 0; 
+}
+
+body {
+	line-height: 2;	
+	font-family: "メイリオ", Meiryo, "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro"; 
+	font-size: 75%; 
+	color: #fff; 
+}
+
+ol, ul {
+	list-style: none; 
+}
+
+a { 
+	color: #fff; 
+	text-decoration: underline; 
+}
+
+a:hover { 
+	color: #fff; 
+	text-decoration: none; 
+}
+
+.color1 {
+	color: #ffd700; 
+}
+
+
+
+#header {
+	height: 100px; 
+	width: 1040px; 
+	margin: auto; 
+}
+
+#logo {
+	margin-top: 30px; 
+	text-align: center; 
+}
+
+
+
+#container { 
+	width: 1040px; 
+	margin: auto; 
+}
+
+#content {
+	width: 840px; 
+	float: right; 
+	margin-right: 20px; 
+}
+
+#leftside {
+	width: 160px; 
+	float: left; 
+	margin-left: 20px; 
+}
+
+
+
+#footer {
+	position: relative; 
+	clear: both; 
+	width: 100%; 
+	height: 50px; 
+	margin: auto; 
+}
+#footer a {
+	color: #fff; 
+	text-decoration: none; 
+}
+
+#footer .left {
+	position: absolute; 
+	left: 20px; 
+	top: 10px; 
+	font-size: 0.8em; 
+}
+#footer .right {
+	position: absolute; 
+	right: 20px; 
+	top: 10px; 
+	font-size: 0.8em; 
+}
+
+
+
+#bg {
+	position:fixed; 
+	top:-50%; 
+	left:-50%; 
+	width:200%; 
+	height:200%; 
+	z-index:-1; 
+}
+
+#bg img {
+	position:absolute;
+	top:0; 
+	left:0; 
+	right:0; 
+	bottom:0; 
+	margin: auto; 
+	min-width:50%; 
+	min-height:50%; 
+}
+
+
+.post {
+	width:820px; 
+	margin-left: 20px; 
+}
+.post_inner {
+	overflow:hidden; 
+}
+
+.contentbox-wrapper {
+	position:relative; 
+	left:0; 
+	width:10000px; 
+	height:100%; 
+}
+
+.contentbox {
+	width:820px; 
+	height:100%; 
+	float:left; 
+}
+.post h2 {
+	font-size: 1.5em; 
+	padding: 10px 0 30px 0; 
+}
+
+
+.post li {
+	padding-left: 15px; 
+	line-height: 30px; 
+}
+.post p {
+	padding-left: 30px; 
+}
+
+
+
+.ta {
+	width: 800px; 
+	border-collapse: collapse; 
+	margin-left: 100px; 
+}
+
+.ta th, td {
+	border: none; 
+	font-weight: normal; 
+	text-align: left; 
+}
+
+.map {
+	padding-top: 50px; 
+}
+
+
+
+#nav {
+	display: block; 
+	width: 160px; 
+	font-family: 'Italianno', cursive; 
+}
+
+
+#nav li a {
+	display: block; 
+	font-size: 3em; 
+	font-weight: normal; 
+	color: #fff; 
+	text-decoration: none;
+}
+
+#nav li a:hover{
+	color: #999; 
+}
+
+#nav li ul {
+	display: none; 
+}
+
+#nav li ul li a {
+	display: block; 
+	padding-left: 30px; 
+	font-size: 1.5em; 
+	text-decoration: none; 
+	font-weight: bold; 
+	color: #fff; 
+}
+
+#nav li ul li a:hover {
+	color: #999; 
+}
+
+#slideshow {
+	position: absolute; 
+	top: 0px; 
+	left: 0px; 
+	right: 0px; 
+	bottom: 0px; 
+	z-index: 1; 
+}
+.slide {
+	height: 500px; 
+	line-height: 500px ; 
+}

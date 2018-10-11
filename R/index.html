@@ -1,0 +1,515 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Tyoe" content="text/javascript" />
+<title>ここにキーワードを含むページのタイトルを記入</title>
+<meta name="Description" content="ここにキーワードを含むページの説明文を記入" />
+<meta name="Keywords" content="キーワード,キーワード,キーワード" />
+<link rel="icon" href="http://saetl.net/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" type="img/x-icon" href="http://saetl.net/favicon.ico" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/skitter.css" rel="stylesheet" type="text/css" />
+<link href='http://fonts.googleapis.com/css?family=Italianno' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+<div id="bg">
+  <img src="images/top.png" alt="トップページ画像"/>
+</div>
+<noscript>
+<p>※このページはJavaScriptを使用しています。JavaScript設定を有効にしてご覧ください。</p>
+</noscript>
+
+<!--　ヘッダー（サイト名やサイトの内容を示す部分）　-->
+<div id="header">
+  
+  <!-- ロゴ（ページ左上のサイト名の画像）　-->
+  <div id="logo">
+    <h1>
+      <a href="index.html" title="ポートフォリオのトップページへ">
+      <img src="images/logo.png" width="300" height="100" alt="ポートフォリオのトップページへ" />
+      </a>
+    </h1>
+    <!-- / #logo -->
+  </div>
+  
+  <!-- / #header -->
+</div>
+
+<div id="container">
+
+  <div id="content">
+  
+    <div class="post">
+      <div class="post_inner">
+      
+        <div class="contentbox-wrapper">
+          <div id="top" class="contentbox">
+            <div class="box_skitter box_skitter_large">
+              <ul>
+                <li>
+                  <a href="#cube">
+                  <img src="omoide/koiwai.jpg" class="cube" />
+                  </a>
+                  <div class="label_text">
+                    <p>小岩井ウォーキング集合写真</p>
+                  </div>
+                </li>
+                <li>
+                  <a href="#cubeRandom">
+                  <img src="omoide/gassyuku1.jpg" class="cubeRandom" />
+                  </a>
+                  <div class="label_text">
+                    <p>新入生合宿集合写真</p>
+                  </div>
+                </li>
+                <li>
+                  <a href="#block">
+                  <img src="images/003.jpg" class="block" />
+                  </a>
+                  <div class="label_text">
+                    <p>クラスレクの様子</p>
+                  </div>
+                </li>
+                <li>
+                  <a href="#cubeStop">
+                  <img src="omoide/class11.jpg" class="cubeStop" />
+                  </a>
+                  <div class="label_text">
+                    <p>友達と塀に登ってみたよ!</p>
+                  </div>
+                </li>
+                <li>
+                  <a href="#cubeStopRandom">
+                  <img src="images/02.png" class="cubeStopRandom" />
+                  </a>
+                  <div class="label_text">
+                    <p>cubeStopRandom</p>
+                  </div>
+                </li>
+                <li>
+                  <a href="#cubeHide">
+                  <img src="images/03.png" class="cubeHide" />
+                  </a>
+                  <div class="label_text">
+                    <p>cubeHide</p>
+                  </div>
+                </li>
+                <li>
+                  <a href="#cubeSize">
+                  <img src="images/01.png" class="cubeSize" />
+                  </a>
+                  <div class="label_text">
+                    <p>cubeSize</p>
+                  </div>
+                </li>
+                <li>
+                  <a href="#horizontal">
+                  <img src="images/02.png" class="horizontal" />
+                  </a>
+                  <div class="label_text">
+                    <p>horizontal</p>
+                  </div>
+                </li>
+                <li>
+                  <a href="#showBars">
+                  <img src="images/03.png" class="showBars" />
+                  </a>
+                  <div class="label_text">
+                    <p>showBars</p>
+                  </div>
+                </li>
+                <li>
+                  <a href="#showBarsRandom">
+                  <img src="images/01.png" class="showBarsRandom" />
+                  </a>
+                  <div class="label_text">
+                    <p>showBarsRandom</p>
+                  </div>
+                </li>
+                <li>
+                  <a href="#tube">
+                  <img src="images/02.png" class="tube" />
+                  </a>
+                  <div class="label_text">
+                    <p>tube</p>
+                  </div>
+                </li>
+                <li>
+                  <a href="#fade">
+                  <img src="images/03.png" class="fade" />
+                  </a>
+                  <div class="label_text">
+                    <p>fade</p>
+                  </div>
+                </li>
+                <li>
+                  <a href="#fadeFour">
+                  <img src="images/01.png" class="fadeFour" />
+                  </a>
+                  <div class="label_text">
+                    <p>fadeFour</p>
+                  </div>
+                </li>
+                <li>
+                  <a href="#paralell">
+                  <img src="images/02.png" class="paralell" />
+                  </a>
+                  <div class="label_text">
+                    <p>paralell</p>
+                  </div>
+                </li>
+                <li>
+                  <a href="#blind">
+                  <img src="images/03.png" class="blind" />
+                  </a>
+                  <div class="label_text">
+                    <p>blind</p>
+                  </div>
+                </li>
+                <li>
+                  <a href="#blindHeight">
+                  <img src="images/01.png" class="blindHeight" />
+                  </a>
+                  <div class="label_text">
+                    <p>blindHeight</p>
+                  </div>
+                </li>
+                <li>
+                  <a href="#blindWidth">
+                  <img src="images/02.png" class="blindWidth" />
+                  </a>
+                  <div class="label_text">
+                    <p>blindWidth</p>
+                  </div>
+                </li>
+                <li>
+                  <a href="#directionTop">
+                  <img src="images/03.png" class="directionTop" />
+                  </a>
+                  <div class="label_text">
+                    <p>directionTop</p>
+                  </div>
+                </li>
+                <li>
+                  <a href="#directionBottom">
+                  <img src="images/01.png" class="directionBottom" />
+                  </a>
+                  <div class="label_text">
+                    <p>directionBottom</p>
+                  </div>
+                </li>
+                <li>
+                  <a href="#directionRight">
+                  <img src="images/02.png" class="directionRight" />
+                  </a>
+                  <div class="label_text">
+                    <p>directionRight</p>
+                  </div>
+                </li>
+                <li>
+                  <a href="#directionLeft">
+                  <img src="images/03.png" class="directionLeft" />
+                  </a>
+                  <div class="label_text">
+                    <p>directionLeft</p>
+                  </div>
+                </li>
+                <li>
+                  <a href="#cubeSpread">
+                  <img src="images/01.png" class="cubeSpread" />
+                  </a>
+                  <div class="label_text">
+                    <p>cubeSpread</p>
+                  </div>
+                </li>
+                <li>
+                  <a href="#glassCube">
+                  <img src="images/02.png" class="glassCube" />
+                  </a>
+                  <div class="label_text">
+                    <p>glassCube</p>
+                  </div>
+                </li>
+                <li>
+                  <a href="#glassBlock">
+                  <img src="images/03.png" class="glassBlock" />
+                  </a>
+                  <div class="label_text">
+                    <p>glassBlock</p>
+                  </div>
+                </li>
+                <li>
+                  <a href="#circles">
+                  <img src="images/01.png" class="circles" />
+                  </a>
+                  <div class="label_text">
+                    <p>circles</p>
+                  </div>
+                </li>
+                <li>
+                  <a href="#circlesInside">
+                  <img src="images/02.png" class="circlesInside" />
+                  </a>
+                  <div class="label_text">
+                    <p>circlesInside</p>
+                  </div>
+                </li>
+                <li>
+                  <a href="#circlesRotate">
+                  <img src="images/03.png" class="circlesRotate" />
+                  </a>
+                  <div class="label_text">
+                    <p>circlesRotate</p>
+                  </div>
+                </li>
+                <li>
+                  <a href="#cubeShow">
+                  <img src="images/01.png" class="cubeShow" />
+                  </a>
+                  <div class="label_text">
+                    <p>cubeShow</p>
+                  </div>
+                </li>
+                <li>
+                  <a href="#upBars">
+                  <img src="images/02.png" class="upBars" />
+                  </a>
+                  <div class="label_text">
+                    <p>upBars</p>
+                  </div>
+                </li>
+                <li>
+                  <a href="#downBars">
+                  <img src="images/03.png" class="downBars" />
+                  </a>
+                  <div class="label_text">
+                    <p>downBars</p>
+                  </div>
+                </li>
+                <li>
+                  <a href="#hideBars">
+                  <img src="images/01.png" class="hideBars" />
+                  </a>
+                  <div class="label_text">
+                    <p>hideBars</p>
+                  </div>
+                </li>
+                <li>
+                  <a href="#swapBars">
+                  <img src="images/02.png" class="swapBars" />
+                  </a>
+                  <div class="label_text">
+                    <p>swapBars</p>
+                  </div>
+                </li>
+                <li>
+                  <a href="#swapBarsBack">
+                  <img src="images/03.png" class="swapBarsBack" />
+                  </a>
+                  <div class="label_text">
+                    <p>swapBarsBack</p>
+                  </div>
+                </li>
+                <li>
+                  <a href="#swapBlocks">
+                  <img src="images/01.png" class="swapBlocks" />
+                  </a>
+                  <div class="label_text">
+                    <p>swapBlocks</p>
+                  </div>
+                </li>
+                <li>
+                  <a href="#cut">
+                  <img src="images/02.png" class="cut" />
+                  </a>
+                  <div class="label_text">
+                    <p>cut</p>
+                  </div>
+                </li>
+              </ul>
+            <!-- / .box_skitter box_skitter_large -->
+            </div>
+          <!-- / #top .contentbox -->
+          </div>
+          
+          <div id="about" class="contentbox">
+            <h2>当サイトを閲覧するにあたって</h2>
+            <ul>
+              <li>
+                このサイトは私達の学校
+                <a href="https://www.morijyobi.ac.jp/">
+                盛岡情報ビジネス専門学校
+                </a>
+                のポートフォリオになります。
+              <li>
+                <span class="color1">このWEBページは平成３０年WEBネットワーク科の生徒が制作しました。</span>
+              <li>
+                このWEBサイトでは、私達モリジョビ生の２年間の思い出を
+              <li>
+                WEBサイトのポートフォリオという形で作成しました。
+              <li>
+                モリジョビの<a href="https://www.morijyobi.ac.jp/">公式サイト</a>や<a href="https://www.facebook.com/morijyobi/">Facebook</a>、<a href="https://twitter.com/morijyobi_olive">Twitter</a>は
+                クリックすることでリンク先に飛びます
+            </ul>
+          <!-- / #about .contentbox -->
+          </div>
+          
+          <div id="category1" class="contentbox">
+            <h2>CATEGORY1</h2>
+            <iframe class="iframe" src="works.html" height=600 width=800 style="border: none" > この部分は iframe 対応のブラウザで見てください。 </iframe>
+          <!-- / #category1 .contentbox -->
+          </div>
+          
+          <div id="category2" class="contentbox">
+            <h2>CATEGORY2</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed iaculis ornare nibh, vel condimentum risus blandit ut. Sed vel tortor ac ligula blandit interdum eu vel leo. In semper, nunc sit amet tincidunt volutpat, nisl elit tempor eros, at rutrum nisl enim a lorem. Ut quis tellus felis. Maecenas rhoncus accumsan odio quis faucibus. Aliquam erat tortor, vehicula eget facilisis eget, commodo et sapien. Suspendisse potenti. Praesent convallis urna non est mollis ultrices. Fusce fringilla lacinia sapien non eleifend. Morbi venenatis nulla id libero tempus et volutpat sem facilisis. Duis eu lacus sapien. Aliquam a lorem justo. Cras nec mi quam, vitae fermentum urna. </p>
+          <!-- / #category2 .contentbox -->
+          </div>
+          
+          <div id="category3" class="contentbox">
+            <h2>CATEGORY3</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed iaculis ornare nibh, vel condimentum risus blandit ut. Sed vel tortor ac ligula blandit interdum eu vel leo. In semper, nunc sit amet tincidunt volutpat, nisl elit tempor eros, at rutrum nisl enim a lorem. Ut quis tellus felis. Maecenas rhoncus accumsan odio quis faucibus. Aliquam erat tortor, vehicula eget facilisis eget, commodo et sapien. Suspendisse potenti. Praesent convallis urna non est mollis ultrices. Fusce fringilla lacinia sapien non eleifend. Morbi venenatis nulla id libero tempus et volutpat sem facilisis. Duis eu lacus sapien. Aliquam a lorem justo. Cras nec mi quam, vitae fermentum urna. </p>
+          <!-- / #category3 .contentbox -->
+          </div>
+          
+          <div id="access" class="contentbox">
+            <h2>ACCESS</h2>
+            <table class="ta">
+              <tr>
+                <th width="100">住所</th>
+                <td>テキストテキストテキスト</td>
+              </tr>
+              <tr>
+                <th width="100">電話</th>
+                <td>xxx-xxxx-xxxx</td>
+              </tr>
+              <tr>
+                <th width="100">営業時間</th>
+                <td>AM10:00～PM8:00</td>
+              </tr>
+              <tr>
+                <th width="100">定休日</th>
+                <td>月曜日</td>
+              </tr>
+              <tr>
+                <th class="map" colspan="2"><iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.jp/?ie=UTF8&amp;ll=35.683235,139.778366&amp;spn=0.258508,0.528374&amp;t=m&amp;z=12&amp;brcurrent=3,0x605d1b87f02e57e7:0x2e01618b22571b89,1&amp;output=embed"></iframe>
+                  <br />
+                  <small>
+                  <a href="https://maps.google.co.jp/?ie=UTF8&amp;ll=35.683235,139.778366&amp;spn=0.258508,0.528374&amp;t=m&amp;z=12&amp;brcurrent=3,0x605d1b87f02e57e7:0x2e01618b22571b89,1&amp;source=embed" style="color:#0000FF;text-align:left">
+                  大きな地図で見る
+                  </a>
+                  </small></th>
+              </tr>
+            </table>
+          <!-- / #access .contentbox -->
+          </div>
+        <!-- / .contentbox-wrapper -->
+        </div>
+      <!-- / .post_inner -->
+      </div>
+    <!-- / .post -->
+    </div>
+    
+    <!-- / #content -->
+  </div>
+  
+  <!--　ページの左部分　-->
+  <div id="leftside">
+    
+    <!--　ナビゲーションメニュー  -->
+    
+    <ul id="nav">
+      <li>
+        <a href="#" onClick="goto('#top', this); return false">
+        HOME
+        </a>
+      </li>
+      <li>
+        <a href="#" onClick="goto('#about', this); return false">
+        ABOUT
+        </a>
+      </li>
+      <li>
+        <a href="#">
+        WORKS
+        </a>
+        <ul>
+          <li>
+            <a href="#" onClick="goto('#category1', this); return false">
+            小岩井ウォーキング
+            </a>
+          <li>
+            <a href="#" onClick="goto('#category2', this); return false">
+            CATEGORY2
+            </a>
+          <li>
+            <a href="#" onClick="goto('#category3', this); return false">
+            CATEGORY3
+            </a>
+        </ul>
+      </li>
+      <li>
+        <a href="#" onClick="goto('#access', this); return false">
+        ACCESS
+        </a>
+      </li>
+    <!-- / #nav -->
+    </ul>
+    
+    <!-- / #leftside -->
+  </div>
+  
+  <!-- / #container -->
+</div>
+<!--　ページの下部分　-->
+
+<div id="footer">
+  <p class="left">
+    <a href="#">
+    プライバシポリシー
+    </a>
+    <a href="#">
+    利用規約
+    </a>
+    <a href="#">
+    サイトマップ
+    </a>
+  </p>
+  <p class="right">Copyright(C) 2018 road to student All Rights Reserved. </p>
+  <!-- / #footer -->
+</div>
+
+<!--　javascript設定　-->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script><!--googleのCDN（ネットワーク経由でコンテンツを提供するサービス）よりjqueryをロード-->
+<script type="text/javascript" src="js/nav.js"></script><!--アコーディオンメニュー-->
+<script type="text/javascript" src="js/footerFixed.js"></script><!--フッターを下に固定-->
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script><!--エフェクト動作-->
+<script type="text/javascript" src="js/jquery.skitter.js"></script><!--スライドショー-->
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('.box_skitter_large').skitter({
+			theme: "square",
+			numbers_align: "center",
+			dots: true,
+			preview: true,
+			focus: true,
+			focus_position: "leftTop",
+			controls: true,
+			controls_position: "leftTop",
+			progressbar: true,
+			enable_navigation_keys: true
+		});
+	});
+</script>
+<script><!--コンテンツを横にスライド-->
+function goto(id, t){	
+	//animate to the div id.
+	$(".contentbox-wrapper").animate({"left": -($(id).position().left)}, 600);
+}
+</script>
+
+</body>
+</html>

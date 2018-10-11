@@ -1,0 +1,219 @@
+﻿@charset "utf-8"; /*文字コード指定*/
+
+/* ----- css reset(各ブラウザで指定されているスタイルを初期化)と全体設定 ----- */
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, form, input, textarea, p, th, td, img {
+	margin: 0; /*ボックス外側の余白(値1つは上下左右をまとめて指定)*/
+	padding: 0; /*ボックス内側の余白(値1つは上下左右をまとめて指定)*/
+	border: 0; /*境界線指定*/
+}
+
+body {
+	line-height: 2;	/*行の高さ指定(数値のみの場合はfont-sizeの倍数)*/
+	font-family: "メイリオ", Meiryo, "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro"; /*フォントの種類指定(左から優先順位)*/
+	font-size: 75%; /* フォントサイズ指定(%はブラウザに設定した標準文字サイズ(通常16px)に対する値)*/
+	color: #fff; /*文字色指定*/
+}
+
+ol, ul {
+	list-style: none; /*リストマーカーの種類指定(noneはなし)*/
+}
+
+a { /*リンクの文字設定(マウスをのせる前)*/
+	color: #fff; /*文字色指定*/
+	text-decoration: underline; /*テキストの装飾指定(下線、上線など)(underlineは下線を引く)*/
+}
+
+a:hover { /*リンクの文字設定(マウスをのせた時)*/
+	color: #fff; /*文字色指定*/
+	text-decoration: none; /*テキストの装飾指定(下線、上線など)(noneはなし)*/
+}
+
+.color1 {
+	color: #ffd700; /*文字色指定*/
+}
+
+/* ----- ヘッダー(ページの一番上の部分) ----- */
+
+#header {
+	height: 100px; /*領域の高さ指定*/
+	width: 1040px; /*幅指定*/
+	margin: auto; /*ボックス外側の余白(autoはボックス幅や隣接する他ボックス幅による自動余白割り当て)*/
+}
+
+#logo {
+	margin-top: 30px; /*ボックス外側上の余白*/
+	text-align: center; /*行の水平方向の揃え方(centerは中央寄せ)*/
+}
+
+/* ----- レイアウト ----- */
+
+#container { /*container(入れ物、容器)の中に各要素(ボックス)を配置*/
+	width: 1040px; /*幅指定*/
+	margin: auto; /*ボックス外側の余白(autoはボックス幅や隣接する他ボックス幅による自動余白割り当て)*/
+}
+
+#content {
+	width: 840px; /*幅指定*/
+	float: right; /*要素を左か右に寄せて配置(rightは右に寄せる)*/
+	margin-right: 20px; /*ボックス外側右の余白*/
+}
+
+#leftside {
+	width: 160px; /*幅指定*/
+	float: left; /*要素を左か右に寄せて配置(leftは左に寄せる)*/
+	margin-left: 20px; /*ボックス外側左の余白*/
+}
+
+/* ----- フッター(ページの一番下の部分) ----- */
+
+#footer {
+	position: relative; /*ボックスの配置方法(relativeは相対位置配置)*/
+	clear: both; /*floatの回り込みを解除*/
+	width: 100%; /*幅指定(100%は画面横幅いっぱいに表示)*/
+	height: 50px; /*領域の高さを指定*/
+	margin: auto; /*ボックス外側の余白(autoはボックス幅や隣接する他ボックス幅による自動余白割り当て)*/
+}
+#footer a {
+	color: #fff; /*文字色指定*/
+	text-decoration: none; /*テキストの装飾指定(下線、上線など)(noneはなし)*/
+}
+
+#footer .left {
+	position: absolute; /*ボックスの配置方法(absoluteは絶対位置配置)*/
+	left: 20px; /*左からの距離(positionで指定している場合に適用)*/
+	top: 10px; /*上からの距離(positionで指定している場合に適用)*/
+	font-size: 0.8em; /*フォントサイズ指定(emはフォントの高さを１とした相対指定)*/
+}
+#footer .right {
+	position: absolute; /*ボックスの配置方法(absoluteは絶対位置配置)*/
+	right: 20px; /*右からの距離(positionで指定している場合に適用)*/
+	top: 10px; /*上からの距離(positionで指定している場合に適用)*/
+	font-size: 0.8em; /*フォントサイズ指定(emはフォントの高さを１とした相対指定)*/
+}
+
+/* ----- 画像を背景いっぱいに表示 ----- */
+
+#bg {
+	position:fixed; /*ボックスの配置方法(fixedは固定配置)*/
+	top:-50%; /*上からの距離(positionで指定している場合に適用)*/
+	left:-50%; /*左からの距離(positionで指定している場合に適用)*/
+	width:200%; /*幅指定*/
+	height:200%; /*領域の高さ指定(100%は縦いっぱいに表示)*/
+	z-index:-1; /*ボックスの重なりの順序を指定*/
+}
+
+#bg img {
+	position:absolute;
+	top:0; /*上からの距離(positionで指定している場合に適用)*/
+	left:0; /*左からの距離(positionで指定している場合に適用)*/
+	right:0; /*右からの距離(positionで指定している場合に適用)*/
+	bottom:0; /*下からの距離(positionで指定している場合に適用)*/
+	margin: auto; /*ボックス外側の余白(autoはボックス幅や隣接する他ボックス幅による自動余白割り当て)*/
+	min-width:50%; /*領域幅の最小値指定*/
+	min-height:50%; /*領域高さの最小値指定*/
+}
+/* ----- コンテンツ ----- */
+
+.post {
+	width:820px; /*幅指定*/
+	margin-left: 20px; /*ボックス外側左の余白*/
+}
+.post_inner {
+	overflow:hidden; /*領域に入りきらない内容の処理(hiddenは表示しない)*/
+}
+
+.contentbox-wrapper {
+	position:relative; /*ボックスの配置方法(relativeは相対位置配置)*/
+	left:0; /*左からの距離(positionで指定している場合に適用)*/
+	width:10000px; /*幅指定*/
+	height:100%; /*領域の高さを指定*/
+}
+
+.contentbox {
+	width:820px; /*幅指定*/
+	height:100%; /*領域の高さを指定*/
+	float:left; /*要素を左か右に寄せて配置(leftは左に寄せる)*/
+}
+.post h2 {
+	font-size: 1.5em; /*フォントサイズ指定(emはフォントの高さを１とした相対指定)*/
+	padding: 10px 0 30px 0; /*ボックス内側の余白(値4つは左から上,右,下,左の値)*/
+}
+
+
+.post li {
+	padding-left: 15px; /*ボックス内側左の余白*/
+	line-height: 30px; /*行の高さ指定*/
+}
+.post p {
+	padding-left: 30px; /*ボックス内側左の余白*/
+}
+
+/* ----- テーブル設定1 ----- */
+
+.ta {
+	width: 800px; /*幅指定*/
+	border-collapse: collapse; /*境界線の表示指定(collapseは重ねて表示)*/
+	margin-left: 100px; /*ボックス外側左の余白*/
+}
+
+.ta th, td {
+	border: none; /*境界線の一括指定(noneはなし)*/
+	font-weight: normal; /*フォントの太さ指定(normalは標準)*/
+	text-align: left; /*行の水平方向の揃え方(leftは左寄せ)*/
+}
+
+.map {
+	padding-top: 50px; /*ボックス内側上の余白*/
+}
+
+/* ----- ナビゲーションメニュー ----- */
+
+#nav {
+	display: block; /*要素の表示形式指定(blockはブロックレベルで表示)*/
+	width: 160px; /*幅指定*/
+	font-family: 'Italianno', cursive; /*Webフォントの種類指定*/
+}
+
+
+#nav li a {
+	display: block; /*要素の表示形式指定(blockはブロックレベルで表示)*/
+	font-size: 3em; /*フォントサイズ指定(emはフォントの高さを１とした相対指定)*/
+	font-weight: normal; /*フォントの太さ指定(normalは標準)*/
+	color: #fff; /*文字色指定*/
+	text-decoration: none;
+}
+
+#nav li a:hover{
+	color: #999; /*文字色指定*/
+}
+
+#nav li ul {
+	display: none; /*要素の表示形式指定(noneは表示しない)*/
+}
+
+#nav li ul li a {
+	display: block; /*要素の表示形式指定(blockはブロックレベルで表示)*/
+	padding-left: 30px; /*ボックス内側左の余白*/
+	font-size: 1.5em; /*フォントサイズ指定(emはフォントの高さを１とした相対指定)*/
+	text-decoration: none; /*テキストの装飾指定(下線、上線など)(noneはなし)*/
+	font-weight: bold; /*フォントの太さ指定(boldは太字)*/
+	color: #fff; /*文字色指定*/
+}
+
+#nav li ul li a:hover {
+	color: #999; /*文字色指定*/
+}
+/* ----- スライドショー ----- */
+#slideshow {
+	position: absolute; /*ボックスの配置方法(absoluteは絶対位置配置)*/
+	top: 0px; /*上からの距離(positionで指定している場合に適用)*/
+	left: 0px; /*からの距離(positionで指定している場合に適用)*/
+	right: 0px; /*右からの距離(positionで指定している場合に適用)*/
+	bottom: 0px; /*下からの距離(positionで指定している場合に適用)*/
+	z-index: 1; /*ボックスの重なりの順序を指定*/
+}
+.slide {
+	height: 500px; /*領域の高さを指定*/
+	line-height: 500px ; /*行の高さ指定*/
+}
